@@ -1,0 +1,127 @@
+.header{
+    position: absolute;
+    top: 10px;
+}
+.container{
+    margin: 70px;
+    width: 90%;
+    height: 700px;
+    overflow: auto;
+}
+#logo{
+    width: 80px;
+    height: 70px;
+    float: left;
+}
+#back{
+    width: 80px;
+    height: 70px;
+    float: left;
+}
+.search{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 300px;
+    height: 30px;
+}
+.img:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 3px black;
+}
+#search{
+    width: 300px;
+    height: 30px;
+    box-shadow: 1px 1px 3px black;
+    padding: 5px;
+    font-size: 18px;
+}
+.popular{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 140px;
+    width: 90%;
+    height: 170px;
+    margin-bottom: 20px;
+    display: flex;
+	flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.trending{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 360px;
+    width: 90%;
+    height: 170px;
+    margin-bottom: 20px;
+    display: flex;
+	flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.documentary{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 580px;
+    width: 90%;
+    height: 170px;
+    display: flex;
+	flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.p1{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.img{
+    width: 160px;
+    height: 160px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#p{
+    position: absolute;
+    top: 90px;
+    z-index: 10px;
+
+}
+.t2, .t3, .t4, .t5, .t6, .t7, .t8, .t9, .t10{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9, .d10{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#t{
+    position: absolute;
+    top: 300px;
+    z-index: 10;
+}
+#d{
+    position: absolute;
+    top: 520px;
+    z-index: 10;
+}

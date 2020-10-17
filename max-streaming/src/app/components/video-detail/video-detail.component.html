@@ -1,0 +1,72 @@
+<div class="w3-container">
+    <div id="id01" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal"> 
+          <span  id="close" onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-large w3-display-topright">&times;</span>
+        </header>
+        <div class="w3-container">
+            <video width="800" height="500" controls id="video">
+                <source src="../../../assets/Flash.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="header">
+    <div class="back">
+        <img id="back" src="../../../assets/icons/back.png" alt="" (click)="backToVideos()">
+    </div>
+    <div class="user">
+        <img id="user" src="../../../assets/icons/user_icon.jpg" alt="">
+    </div>
+</div>
+<div id="outer">
+    <img id="img" src="../../../assets/flash_capa/tela_inicial.jpg" alt="">
+    <div id="inner">
+        <div class="select">
+            <select name="slct" id="slct">
+                <option selected disabled>Choose a Session</option>
+                <option value="1">Session 1</option>
+                <option value="2">Session 2</option>
+                <option value="3">Session 3</option>
+            </select>
+        </div>
+        <div class="select">
+            <select name="slct" id="slct" (change)="changeEpisode()">
+                <option selected disabled>Episode</option>
+                <option>Pilot</option><img  id="src" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/267px-F_icon.svg.png">
+                <option>Fastest Man Alive</option>
+                <option>Things You Can't Outrun</option>
+                <option>Going Rogue</option>
+                <option>Plastique</option>
+                <option>The Flash Is Born</option>
+                <option>Power Outage</option>
+                <option>Flash vs. Arrow</option>
+                <option>The Man in the Yellow Suit</option>
+                <option>Revenge of the Rogues</option>
+                <option>The Sound and the Fury</option>
+                <option>Crazy for You</option>
+                <option>The Nuclear Man</option>
+                <option>Fallout</option>
+                <option>Out of Time</option>
+                <option>Rogue Time</option>
+                <option>Tricksters</option>
+                <option>All Star Team Up</option>
+                <option>Who Is Harrison Wells?</option>
+                <option>The Trap</option>
+                <option>Grodd Lives</option>
+                <option>Rogue Air</option>
+                <option>Fast Enough</option>
+            </select>
+        </div>
+        <div class="logos" *ngIf="showPlayers">
+            <img id="src" src="../../../assets/streams/netflix_icon.png" (click)="playVideo()">
+            <img id="src" src="../../../assets/streams/prime_video_icon.png" (click)="playVideo()">
+        </div>
+    </div>
+</div>
+
+
+

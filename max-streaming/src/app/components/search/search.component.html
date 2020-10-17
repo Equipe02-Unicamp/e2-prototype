@@ -1,0 +1,59 @@
+<div class="w3-container">
+    <div id="id01" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal"> 
+          <span  id="close" onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-large w3-display-topright">&times;</span>
+        </header>
+        <div class="w3-container">
+            <video width="800" height="500" controls id="video">
+                <source src="../../../assets/videoplayback.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img id="logo" src="../../../assets/icons/compact_logo.png" alt="">
+        </div>
+    </div>
+    <div class="search">
+        <input id="search" type="text" placeholder="Animals Maroon 5">
+    </div>
+ 
+    <div class="results">
+        <h3>Top Results</h3>
+        <div class="img-result">
+            <img class="img-result"src="../../../assets/playlists/musica_capa.jpg" alt="" srcset="">
+        </div>
+        <div class="img-result2">
+            <h3>Available in</h3>
+            <div class="d1">
+                <img class="d1" src="../../../assets/streams/amazon_music_icon.png" alt="" srcset="" (click)="openAudio()">
+            </div>
+            <div class="d2">
+                <img class="d2" src="../../../assets/streams/deezer_icon.png" alt="" srcset="" (click)="openAudio()">
+            </div>
+            <div class="d3">
+                <img class="d3" src="../../../assets/streams/spotify_icon.png" alt="" srcset="" (click)="openAudio()">
+            </div>
+            <div class="d4">
+                <img class="d4" src="../../../assets/streams/Apple-Music.jpg" alt="" srcset="" (click)="openAudio()">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="results">
+        <h3>Playlists</h3>
+        <div class="img-result" id="img-id">
+            <img class="img-result" src="../../../assets/playlists/28_playlist.jpg" alt="">
+        </div>
+        <div class="img-result">
+            <img class="img-result" src="../../../assets/playlists/30_playlist.jpg" alt="">
+        </div>
+    </div>
+</div>
